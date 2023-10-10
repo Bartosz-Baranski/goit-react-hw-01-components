@@ -23,8 +23,8 @@ const Statistics = ({ statisticsData, statisticsTitle }) => {
             key={statistics.id}
             style={{ backgroundColor: getRandomBgColor() }}
           >
-            <span class="label">{statistics.label}</span>
-            <span class="percentage">{statistics.percentage}%</span>
+            <span className="label">{statistics.label}</span>
+            <span className="percentage">{statistics.percentage}%</span>
           </li>
         ))}
       </ul>
