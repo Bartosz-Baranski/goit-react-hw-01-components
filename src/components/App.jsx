@@ -1,16 +1,23 @@
-export const App = () => {
+import React from 'react';
+import Profile from './Profile/Profile';
+import userData from './Profile/user.json';
+import Statistics from './Statistics/Statistics';
+import statisticsData from './Statistics/data.json';
+
+export function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Profile
+        username={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        avatar={userData.avatar}
+        stats={userData.stats}
+      />
+      <Statistics
+        statisticsData={statisticsData}
+        statisticsTitle="Upload stats"
+      />
+    </>
   );
-};
+}
