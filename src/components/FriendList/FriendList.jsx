@@ -4,7 +4,7 @@ import css from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
   return (
-    <ul class={css.friendList}>
+    <ul className={css.friendList}>
       {friends.map(friends => (
         <li className={css.friendsItem} key={friends.id}>
           <span
@@ -28,7 +28,7 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      isOnline: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
     })
