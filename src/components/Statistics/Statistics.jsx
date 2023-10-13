@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Statistics.css';
+import css from './Statistics.module.css';
 
 function getRandomBgColor() {
   let letters = '0123456789ABCDEF'.split('');
@@ -13,18 +13,21 @@ function getRandomBgColor() {
 
 const Statistics = ({ statisticsData, statisticsTitle }) => {
   return (
-    <div className="statistics" style={{ backgroundColor: getRandomBgColor() }}>
-      {statisticsTitle && <h2 className="title">{statisticsTitle}</h2>}
+    <div
+      className={css.statistics}
+      style={{ backgroundColor: getRandomBgColor() }}
+    >
+      {statisticsTitle && <h2 className={css.title}>{statisticsTitle}</h2>}
 
-      <ul className="stat-list">
+      <ul className={css.statList}>
         {statisticsData.map(statistics => (
           <li
-            className="item"
+            className={css.item}
             key={statistics.id}
             style={{ backgroundColor: getRandomBgColor() }}
           >
-            <span className="label">{statistics.label}</span>
-            <span className="percentage">{statistics.percentage}%</span>
+            <span className={css.label}>{statistics.label}</span>
+            <span className={css.percentage}>{statistics.percentage}%</span>
           </li>
         ))}
       </ul>

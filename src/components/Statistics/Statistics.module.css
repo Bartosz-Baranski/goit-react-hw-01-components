@@ -4,12 +4,13 @@
   align-items: center;
   width: 600px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .title {
   font-size: 24px;
   color: #fff;
 }
-.stat-list {
+.statList {
   display: flex;
   padding-left: 0px;
 }

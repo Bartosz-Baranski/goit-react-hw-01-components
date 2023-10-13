@@ -3,6 +3,8 @@ import Profile from './Profile/Profile';
 import userData from './Profile/user.json';
 import Statistics from './Statistics/Statistics';
 import statisticsData from './Statistics/data.json';
+import FriendList from './FriendList/FriendList';
+import friends from './FriendList/friends.json';
 
 export function App() {
   return (
@@ -18,6 +20,7 @@ export function App() {
         statisticsData={statisticsData}
         statisticsTitle="Upload stats"
       />
+      <FriendList friends={friends} />
     </>
   );
 }
