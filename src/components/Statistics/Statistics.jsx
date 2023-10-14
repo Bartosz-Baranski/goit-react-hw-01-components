@@ -19,7 +19,7 @@ const Statistics = ({ statisticsData, statisticsTitle }) => {
     >
       {statisticsTitle && <h2 className={css.title}>{statisticsTitle}</h2>}
 
-      <ul className={css.statList}>
+      <ul className={css.stat_list}>
         {statisticsData.map(statistics => (
           <li
             className={css.item}

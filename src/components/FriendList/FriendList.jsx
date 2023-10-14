@@ -4,11 +4,11 @@ import css from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
   return (
-    <ul className={css.friendList}>
+    <ul className={css.friend_list}>
       {friends.map(friends => (
-        <li className={css.friendsItem} key={friends.id}>
+        <li className={css.friends_item} key={friends.id}>
           <span
-            className={css.friendStatus}
+            className={css.friend_status}
             style={{ backgroundColor: statusColor(friends.isOnline) }}
           >
             {friends.isOnline}
@@ -18,7 +18,7 @@ const FriendList = ({ friends }) => {
             alt="User avatar"
             className={css.avatar}
           ></img>
-          <p className={css.friendName}>{friends.name}</p>
+          <p className={css.friend_name}>{friends.name}</p>
         </li>
       ))}
     </ul>

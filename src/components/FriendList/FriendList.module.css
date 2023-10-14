@@ -1,11 +1,11 @@
-.friendList {
+.friend_list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding-left: 0px;
 }
-.friendsItem {
+.friends_item {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -13,7 +13,7 @@
   height: 100px;
   border: 2px solid black;
 }
-.friendStatus {
+.friend_status {
   display: block;
   width: 10px;
   height: 10px;
@@ -24,7 +24,7 @@
   width: 80px;
   height: 80px;
 }
-.friendName {
+.friend_name {
   font-size: 32px;
   font-weight: 500;
 }
